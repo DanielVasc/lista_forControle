@@ -7,10 +7,24 @@
 
     //ENTRADA
 
+    let soma = 0;
+    let media = 0;
+
+
 
     //PROCESSAMENTO
+    for (let index = 1; index <= 5; index++) {
+        let numero = Number(prompt("Informe o número"));
+        soma += numero;
+    }
+
+    media = soma / 5;
+
 
 
     //SAÍDA
+
+    alert(`A soma dos números é: ${soma}`);
+    alert(`A média dos números é: ${media.toFixed(2)}`);
 
 </script>
