@@ -6,9 +6,19 @@
     */
 
     //ENTRADA
+    let populacaoInicial = 50000;
+    let taxaCrescimentoAnual = 0.015;
+    let populacaoAtual = populacaoInicial;
 
+    ///PROCESSAMENTO
     
-    //PROCESSAMENTO
+    for (let index = 1; index <= 10; index++) {
+        if (index === 5 || index === 10) {
+            alert(`População prevista para ${index} anos: ${populacaoAtual.toFixed(0)} habitantes`);
+        }
+
+        populacaoAtual += populacaoAtual * taxaCrescimentoAnual;
+    }
     
 
     //SAÍDA

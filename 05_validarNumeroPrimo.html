@@ -6,11 +6,29 @@
     */
 
     //ENTRADA
+    const numero = Number(prompt("Informe um número:"));
+
+
 
 
     //PROCESSAMENTO
+    if (numero < 2) {
+        alert(`O número não é primo, pois é menor que 2.`);
+    } else {
+        let primo = true;
 
+        for (let index = 2; index < numero; index++) {
+            if (numero % index === 0) {
+                primo = false;
+            }
+        }
 
+        if (primo) {
+            alert(`O número ${numero} é primo.`);
+        } else {
+            alert(`O número ${numero} não é primo.`);
+        }
+    }
     //SAÍDA
 
 </script>
